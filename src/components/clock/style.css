@@ -29,42 +29,35 @@
 .clock__mark:nth-child(5n+1){
 	border-top: 3rem solid steelblue;
 	width: 1rem;
-	height: 100%;
 }
 .clock__hours{
-	background-color: black;
 	width: 1.5rem;
-	height: 35%;
+	border-top: 15rem solid black;
+	height: 61%;
 	position: absolute;
 	bottom: 50%;
-	left: 50%;
-	transform: translateX(-50%);
-	display: none;
+	left: 50%;	
 }
 .clock__minutes{
-	background-color: black;
 	width: 1rem;
-	height: 40%;
+	height: 82%;
+	border-top: 20rem solid black;
 	position: absolute;
 	bottom: 50%;
-	left: 50%;
-	transform: translateX(-50%);
-	display: none;
+	left: 50%;	
 }
 .clock__seconds{
-	background-color: red;
 	width: .2rem;
-	height: 45%;
+	height: 90%;
+	border-top: 22rem solid red;
 	position: absolute;
 	bottom: 50%;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 50%;	
 }
 .clock__seconds::before{
 	content: "";
 	background-color: red;
 	width: .2rem;
-	height: 20%;
+	height: 4rem;
 	position: absolute;
-	top: 100%;
 }

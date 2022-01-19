@@ -78,9 +78,9 @@ class Clock extends Component {
 				<div className="clock__mark" style={{transform: 'translateX(-50%) rotate(348deg)'}}></div>
 				<div className="clock__mark" style={{transform: 'translateX(-50%) rotate(354deg)'}}></div>
 			</div>
-			<div className="clock__hours"></div>
-			<div className="clock__minutes"></div>
-			<div className="clock__seconds"></div>
+			<div className="clock__hours" style={{transform: 'translate(-50%, 50%) rotate(90deg)'}}></div>
+			<div className="clock__minutes" style={{transform: 'translate(-50%, 50%) rotate(90deg)'}}></div>
+			<div className="clock__seconds" style={{transform: 'translate(-50%, 50%) rotate(90deg)'}}></div>
 		</div>
 		)
 	}
