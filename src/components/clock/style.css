@@ -1,0 +1,70 @@
+.clock{
+	width: 50rem;
+	height: 50rem;
+	border: .6rem solid rgba(70, 130, 180, .2);
+	border-radius: 25rem;
+	position: relative;
+}
+.clock::before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 1rem;
+	background-color: black;
+	z-index: 1;
+}
+.clock__mark{
+	border-top: 1.5rem solid steelblue;
+	width: .6rem;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.clock__mark:nth-child(5n+1){
+	border-top: 3rem solid steelblue;
+	width: 1rem;
+	height: 100%;
+}
+.clock__hours{
+	background-color: black;
+	width: 1.5rem;
+	height: 35%;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+.clock__minutes{
+	background-color: black;
+	width: 1rem;
+	height: 40%;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+.clock__seconds{
+	background-color: red;
+	width: .2rem;
+	height: 45%;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.clock__seconds::before{
+	content: "";
+	background-color: red;
+	width: .2rem;
+	height: 20%;
+	position: absolute;
+	top: 100%;
+}
