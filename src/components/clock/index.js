@@ -28,7 +28,7 @@ class Clock extends Component {
 		const {seconds,minutes,hours} = this.state
 		const s = seconds * 6
 		const m = minutes * 6 + 6 * seconds / 60
-		const h = hours % 12 * 30 + 6 * minutes / 60
+		const h = hours % 12 * 30 + minutes / 2
 		return(
 			<div className="clock">
 				<div className="clock__face">
