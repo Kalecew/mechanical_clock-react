@@ -21,7 +21,8 @@
 .clock__mark{
 	border-top: 1.5rem solid steelblue;
 	width: .6rem;
-	height: 100%;
+	height: 50rem;
+	margin-top: -.6rem;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
