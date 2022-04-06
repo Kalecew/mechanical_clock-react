@@ -2,10 +2,14 @@ import { Component } from 'react'
 import './style.css'
 
 class Clock extends Component {
-	state = {
-		seconds: 0,
-		minutes: 0,
-		hours: 0
+	constructor(props) {
+		super(props)
+		const date = new Date()
+		this.state = {
+			seconds: date.getSeconds(),
+			minutes: date.getMinutes(),
+			hours: date.getHours()
+		}
 	}
 
 	tick = () => {
